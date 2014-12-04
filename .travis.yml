@@ -72,8 +72,8 @@ mysql:
 
 before_install:
   - composer self-update
-  - cd ./tests
   - composer install -n --dev --prefer-source
+  - cd ./tests
   - drupal-ti before_install
 
 install:
