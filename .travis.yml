@@ -81,6 +81,8 @@ install:
   - drupal-ti install
 
 before_script:
+  - cd ..
+  - composer install -n --dev --prefer-source
   - drupal-ti before_script
 
 script:
