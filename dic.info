@@ -5,3 +5,5 @@ version = "7.x-1.2"
 core = "7.x"
 project = "dic"
 files[] = includes/DIC.inc
+files[] = includes/test/drupal_unit_test_case_example.test
+files[] = includes/test/drupal_web_test_case_example.test
