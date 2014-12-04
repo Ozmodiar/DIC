@@ -80,6 +80,7 @@ install:
   - drupal-ti install
 
 before_script:
+  - composer global update
   - composer update --dev
   - drupal-ti before_script
 
