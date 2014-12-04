@@ -72,21 +72,22 @@ mysql:
 
 before_install:
   - composer self-update
-  - composer install -n --dev --prefer-source
   - cd ./tests
-  - ../vendor/bin/drupal-ti before_install
+  - composer global require "lionsad/drupal_ti:1.*"
+  - composer global update
+  - drupal-ti before_install
 
 install:
-  - ../vendor/bin/drupal-ti install
+  - drupal-ti install
 
 before_script:
-  - ../vendor/bin/drupal-ti before_script
+  - drupal-ti before_script
 
 script:
-  - ../vendor/bin/drupal-ti script
+  - drupal-ti script
 
 after_script:
-  - ../vendor/bin/drupal-ti after_script
+  - drupal-ti after_script
 
 notifications:
   email: false
