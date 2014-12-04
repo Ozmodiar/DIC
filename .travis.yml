@@ -74,19 +74,19 @@ before_install:
   - composer self-update
   - composer install -n --dev --prefer-source
   - cd ./tests
-  - drupal-ti before_install
+  - ../vendor/bin/drupal-ti before_install
 
 install:
-  - drupal-ti install
+  - ../vendor/bin/drupal-ti install
 
 before_script:
-  - drupal-ti before_script
+  - ../vendor/bin/drupal-ti before_script
 
 script:
-  - drupal-ti script
+  - ../vendor/bin/drupal-ti script
 
 after_script:
-  - drupal-ti after_script
+  - ../vendor/bin/drupal-ti after_script
 
 notifications:
   email: false
