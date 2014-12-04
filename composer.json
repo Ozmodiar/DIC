@@ -8,7 +8,8 @@
         "symfony/yaml": "~2.4"
     },
     "require-dev": {
-        "phpunit/phpunit": "4.3.*"
+        "phpunit/phpunit": "4.3.*",
+        "lionsad/drupal_ti": "1.*"
     },
     "extra": {
         "installer-name": "dic",
