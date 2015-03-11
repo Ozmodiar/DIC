@@ -1,0 +1,15 @@
+<?php
+
+class DrupalTravisWebTest extends DrupalWebTestCase {
+  public static function getInfo() {
+    return array(
+      'name' => 'DIC Example Web Test',
+      'description' => 'DIC Example Web Test.',
+      'group' => 'DIC',
+    );
+  }
+
+  function testWebTest() {
+    $this->assertTrue(TRUE);
+  }
+}

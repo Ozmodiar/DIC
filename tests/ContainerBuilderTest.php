@@ -17,7 +17,7 @@ class ContainerBuilderTest extends \PHPUnit_Framework_TestCase {
   }
 
   private function getContainerPath() {
-    return __DIR__ . '/Resources/.container/container.php';
+    return __DIR__ . '/phpunit/Resources/.container/container.php';
   }
 
   /**
